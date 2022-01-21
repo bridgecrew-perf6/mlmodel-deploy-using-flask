@@ -1,7 +1,6 @@
 # importing the dataset
 import pandas 
 import numpy
-from sklearn import preprocessing
 import numpy as np
 from sklearn import pipeline
  
