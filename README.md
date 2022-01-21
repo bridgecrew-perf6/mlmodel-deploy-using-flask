@@ -4,4 +4,4 @@ The dataset comes from [Kaggle.com](https://www.kaggle.com/uciml/adult-census-in
 
 There are 32561 records with 15 features.
 
-We are going to use this dataset to train a classification model that will predict whether a given individual will have income above $50K per year and deply it as inside a Flask web app. 
+We are going to use this dataset to train a classification model that will predict whether a given individual will have income above $50K per year and deploy it as inside a Flask web app. 
