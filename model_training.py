@@ -60,7 +60,6 @@ X_train, X_test, y_train, y_test =  train_test_split(X, y, test_size=.2, random_
 # we will encode the categorical variables by using one hot encoder from sklearn preprocessing
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.compose import ColumnTransformer
-from sklearn.compose import make_column_selector
 from sklearn.preprocessing import StandardScaler
 from sklearn.impute import SimpleImputer
 
