@@ -28,7 +28,7 @@ for col in category_columns:
 category_columns.remove('income')
 
 #there are no null values though there are ? in the dataset. 
-# We will comvert all the ? into NAN and then impute values
+# We will convert all the ? into NAN and then impute values
 
 df[df == '?'] = np.nan
 
@@ -125,4 +125,4 @@ clf.fit(X, y)
 
 #write model out as pkl
 import joblib
-joblib.dump(clf, './best_model.pkl')
+joblib.dump(clf, './model/best_model.pkl')
