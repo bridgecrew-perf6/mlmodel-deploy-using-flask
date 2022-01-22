@@ -10,6 +10,13 @@ print(df.head())
 print(df.shape)
 print(df.info())
 
+#in the dataset we have fnlwgt
+# fnlwgt: final weight. This is the number of people the census believes
+# the entry represents. For the purpose of our problem this feature is not that useful so we will 
+#drop it
+
+df.drop(['fnlwgt'], axis=1, inplace=True)
+
 #lets convert the columns into relevant datatype
 category_columns = ["workclass", "marital-status","education", "race", "occupation", "relationship", "gender", "native-country","income"]
 numeric_columns =  [ col for col in df.columns if df[col].dtype=='int64' ]
@@ -24,6 +31,7 @@ for col in category_columns:
     #remove leading and trailing spaces
     df[col] = df[col].str.strip()
 
+#removing income from category column as thats the target variable
 category_columns.remove('income')
 
 #there are no null values though there are ? in the dataset. 

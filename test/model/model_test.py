@@ -2,8 +2,8 @@
 import numpy as np
 import pandas
 
-test_data = np.array([[38,"Private",215646,"HS-grad",9,"Divorced","Handlers-cleaners","Not-in-family","White","Male",0,0,40,"United-States"]])
-test_df = pandas.DataFrame(test_data, columns = ["age","workclass","fnlwgt","education","educational-num","marital-status","occupation","relationship","race","gender","capital-gain","capital-loss","hours-per-week","native-country"])
+test_data = np.array([[38,"Private","HS-grad",9,"Divorced","Handlers-cleaners","Not-in-family","White","Male",0,0,40,"United-States"]])
+test_df = pandas.DataFrame(test_data, columns = ["age","workclass","education","educational-num","marital-status","occupation","relationship","race","gender","capital-gain","capital-loss","hours-per-week","native-country"])
 
 #Load trained model
 import joblib
